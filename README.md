@@ -1,3 +1,6 @@
-# androidstudio
-test android studio software
-å­¦ä¹ ä½¿ç”¨ android studio çš„ä½¿ç”¨
+#
+
+###±àÂë¸ñÊ½ gbk
+
+
+
