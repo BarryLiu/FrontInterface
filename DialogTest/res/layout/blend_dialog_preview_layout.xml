@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blend_dialog_frame"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/blend_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:padding="16dp"
+        android:text="标题内容"
+        android:textColor="@color/blend_item_theme_color"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blend_item_theme_color" />
+    <LinearLayout
+        android:id="@+id/blend_dialog_preview"
+        android:layout_width="match_parent"
+        android:layout_height="242dip"
+        android:gravity="center"
+        android:background="@null">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/blend_holo_progressbar_circle" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/blend_dialog_nextview"
+        android:layout_width="match_parent"
+        android:layout_height="242dip"
+        android:visibility="gone"
+        android:cacheColorHint="#0000"
+        android:divider="@color/blend_item_divider_color"
+        android:dividerHeight="0.5dip"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+    <View
+        android:id="@+id/blend_dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blend_item_divider_color" />
+
+    <TextView
+        android:id="@+id/blend_dialog_cancle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/blend_view_bg_default"
+        android:gravity="center"
+        android:text="是"
+        android:textColor="@color/lightblack"
+        android:textSize="16.0dip" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DialogTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="click">点击下</string>
+    <string name="no">取消</string>
+    <string name="title">标题内容</string>
+
+</resources>
