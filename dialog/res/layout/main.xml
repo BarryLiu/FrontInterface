@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:id="@+id/btn_dialog1" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="模式对话框" />
+	<Button android:id="@+id/btn_custom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="自己定义对话框" />
+		
+		
+	<Button android:id="@+id/btn_custom2" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="自己定义对话框22" />
+		
+
+	<TextView android:id="@+id/show" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="show"/>
+	
+</LinearLayout>  
