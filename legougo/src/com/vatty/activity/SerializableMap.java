@@ -3,10 +3,9 @@ package com.vatty.activity;
 import java.io.Serializable;
 import java.util.Map;
 /**
- * vatty * 
- *
- * hongshengpeng.com
  * 
+ * @author Barry
+ *
  */
 public class SerializableMap implements Serializable {
 		   

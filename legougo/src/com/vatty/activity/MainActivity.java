@@ -21,10 +21,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * vatty * 
- *
- * hongshengpeng.com
  * 
+ * @author Barry
+ *
  */
 public class MainActivity extends FragmentActivity {
     private static final String TAG = "MainActivity";
