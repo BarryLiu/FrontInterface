@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HappyParents</string>
+
+    <!-- MainMenu yong -->
+    <string name="campusLife">校园生活</string>
+    <string name="growthLog">成长日志</string>
+    <string name="teachChild">教子有方</string>
+    <string name="treasureBowl">聚宝盆</string>
+    <string name="learnPlan">教学计划</string>
+    <string name="recipe">每周食谱</string>
+    <string name="responsive">有求必应</string>
+    <string name="babyRing">宝宝圈</string>
+    <string name="loveFimilay">我爱我家</string>
+    <string name="action_settings">请选择：</string>
+    <string name="hello_world">Hello world</string>
+    <string name="title_activity_treasure_bowl">聚宝盆</string>
+    <string name="share">分享</string>
+    <string name="logout">注销</string>
+    <string name="setting">设置</string>
+    <string name="dividing_line">分割线</string>
+
+    <!-- 校园生活 -->
+    <string name="delete">删除</string>
+    <string name="top">赞</string>
+    <string name="toped">已赞</string>
+    <string name="comment">评论</string>
+    <string name="reply">回复</string>
+    <string name="title_activity_cam_dymic_detail">Cam_dymic_detail</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_anotice_test">ANoticeTest</string>
+
+    <!-- 有求必应 -->
+    <string name="uqbing">有求必应</string>
+    <string name="discuss">评论</string>
+    <string name="zan">赞</string>
+    <string name="send">发送</string>
+    <string name="hint">请说点什么......</string>
+    <string name="title_activity_ftp_test">FtpTestActivity</string>
+    <string name="straightin">园长直通</string>
+    <string name="leave">请假</string>
+    <string name="specialservice">特服加餐</string>
+    <string name="feeding">喂药请求</string>
+    <string name="specialrequest">特服请求</string>
+    <string name="early">早送托管</string>
+    <string name="late">晚接托管</string>
+    <string name="query">疑问解答</string>
+    <!-- ListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 聚宝盆 -->
+    <string name="treasure_repo">宝库</string>
+    <string name="current_item_indictor">当前位置提示</string>
+    <string name="treasure_word">图书</string>
+    <string name="treasure_audio">音像</string>
+    <string name="ic_treasure">商品图标</string>
+    <string name="treasure_type">商品分类</string>
+    <string name="title_activity_treasure_detail">TreasureDetailActivity</string>
+
+    <!-- Login -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">登陆</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    
+    <!-- UserInfo -->
+    <string name="userid_error">无法获取用户信息</string>
+    <string name="back">返回</string>
+    
+    <!-- common -->
+    <string name="tv_common_title_name">公共标题</string>
+    
+    
+    <string name="no_exist_type">不存在的回复类型</string>
+    
+    <string name="userinfo">用户信息</string>
+    
+    
+    <string name="userinfo_cellphone">手机</string>
+    <string name="userinfo_descripption">描述</string>
+    <string name="userinfo_email">邮箱</string>
+    <string name="userinfo_qq">QQ号码</string>
+    <string name="userinfo_loginstatus">登录状态</string>
+    <string name="userinfo_lastlogintime">最近登陆</string>
+    <string name="userinfo_userkind">用户类型</string>
+    <string name="testinfo">本地测试数据</string>
+    
+    <!-- 用户类型 -->
+    <string name="parent">学生家长</string>
+    <string name="teacher">老师</string>
+    <string name="garden">园长</string>
+    
+    <!-- 在线状态 -->
+    <string name="inline">在线</string>
+    <string name="outline">离线</string>
+    
+    <!-- 性别 -->
+    <string name= "sex_man">男</string>
+    <string name="sex_women">女</string>
+    
+    <string name="friendtrend">好友动态</string>
+    
+    <string name="happyparents">快乐父母</string>
+</resources>

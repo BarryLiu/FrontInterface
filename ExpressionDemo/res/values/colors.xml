@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <color name="cam_listitem_name">#191970</color>
+    <color name="cam_listitem_dymiccontent">#000000</color> <!-- 黑色 -->
+    <!-- <color name="dymic_comment_name">#0b0bf7</color> -->
+    <color name="dymic_comment_name">#0000FF</color>       <!-- 纯蓝 -->
+    <color name="blue_week">#0033FF</color>       
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="gray">#808080</color>    <!-- 灰色 -->
+    <color name="snow">#fffafa</color>    <!-- 雪白色 -->
+    <color name="floralwhite">#fffaf0</color>  <!--花白色 -->
+    <color name="lightGray">#f6f6f6</color>  <!--浅灰色 --> 
+    
+    <color name="cam_time">#999999</color>
+    <color name="keyword">#5474b5</color>   <!--姓名 赞 已赞 评论 等关键字字体 -->
+    <color name="comment_bg">#f4f4f4</color> <!-- 评论的背景 -->
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="userinfo_bg">#efeff4</color>
+    <color name="white">#ffffff</color> <!-- 白色 -->
+</resources>

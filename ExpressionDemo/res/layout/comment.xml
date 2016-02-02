@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow" >
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/sendButton"
+        android:layout_toRightOf="@+id/cam_comment_emo"
+        android:gravity="center_vertical"
+        android:hint="@string/hint" >
+    </EditText>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/send" />
+
+    <ImageButton
+        android:id="@+id/cam_comment_a"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:src="@drawable/cam_comment_a" />
+
+    <ImageButton
+        android:id="@+id/cam_comment_emo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/cam_comment_a"
+        android:background="@null"
+        android:src="@drawable/cam_comment_face" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="135dip"
+        android:layout_below="@+id/cam_comment_a"
+        android:layout_gravity="center"
+        android:background="#f32f33"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/page_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpager"
+        android:background="#ddd"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/page0_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/page_focused" />
+
+        <ImageView
+            android:id="@+id/page1_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+
+        <ImageView
+            android:id="@+id/page2_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="matrix"
+            android:src="@drawable/page_unfocused" />
+    </LinearLayout>
+
+</RelativeLayout>
