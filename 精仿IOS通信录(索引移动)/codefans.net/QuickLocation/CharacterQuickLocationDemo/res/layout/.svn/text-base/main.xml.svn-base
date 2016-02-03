@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/hello"
+	    />
+	<!-- Android对ListView设置了优化，对于少于4页内容的List即使设置了fastScrollEnabled=true也不会显示FastScroller -->
+	<!-- <Android_Source>\frameworks\base\core\java\android\widget\FastScroller.java:其中常量MIN_PAGES及其相关 -->
+	<ListView android:id="@+id/listInfo"    
+         android:focusable="true"    
+         android:layout_weight="1.0"    
+         android:layout_height="wrap_content"    
+         android:layout_width="fill_parent"    
+         android:fastScrollEnabled="true"  
+         android:cacheColorHint="#00000000"  
+         android:background="@drawable/main_list_bg"    
+     ></ListView>
+</LinearLayout>

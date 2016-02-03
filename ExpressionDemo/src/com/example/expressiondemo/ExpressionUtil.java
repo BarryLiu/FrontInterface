@@ -16,23 +16,21 @@ import android.util.Log;
 
 public class ExpressionUtil {
 	/**
-	 * 对spanableString进行正则判断，如果符合要求，则以表情图片代替
+	 * 瀵箂panableString杩涜姝ｅ垯鍒ゆ柇锛屽鏋滅鍚堣姹傦紝鍒欎互琛ㄦ儏鍥剧墖浠ｆ浛
 	 */
     public static void dealExpression(Context context,SpannableString spannableString, Pattern patten, int start) throws Exception {
-    	Matcher matcher = patten.matcher(spannableString);//得到一个比较器
-        while (matcher.find()) {
-            String key = matcher.group();//spannableString作为整个匹配
-            if (matcher.start() < start) {//开始的位置
-                continue;
+    	Matcher matcher = patten.matcher(spannableString);//寰楀埌涓�釜姣旇緝鍣�        while (matcher.find()) {
+            String key = matcher.group();//spannableString浣滀负鏁翠釜鍖归厤
+            if (matcher.start() < start) {//寮�鐨勪綅缃�                continue;
             }
             Field field = R.drawable.class.getDeclaredField(key);
-			int resId = Integer.parseInt(field.get(null).toString());//通过上面匹配得到的字符串来生成图片资源id
+			int resId = Integer.parseInt(field.get(null).toString());//閫氳繃涓婇潰鍖归厤寰楀埌鐨勫瓧绗︿覆鏉ョ敓鎴愬浘鐗囪祫婧恑d
             if (resId != 0) {
                 Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), resId);
-                ImageSpan imageSpan = new ImageSpan(bitmap);//通过图片资源id来得到bitmap，用一个ImageSpan来包装			            
-                int end = matcher.start() + key.length();//计算该图片名字的长度，也就是要替换的字符串的长度					
-                spannableString.setSpan(imageSpan, matcher.start(), end, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);//将该图片替换字符串中规定的位置中  	
-                if (end < spannableString.length()) {//如果整个字符串还未验证完，则继续。。 						
+                ImageSpan imageSpan = new ImageSpan(bitmap);//閫氳繃鍥剧墖璧勬簮id鏉ュ緱鍒癰itmap锛岀敤涓�釜ImageSpan鏉ュ寘瑁�		            
+                int end = matcher.start() + key.length();//璁＄畻璇ュ浘鐗囧悕瀛楃殑闀垮害锛屼篃灏辨槸瑕佹浛鎹㈢殑瀛楃涓茬殑闀垮害					
+                spannableString.setSpan(imageSpan, matcher.start(), end, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);//灏嗚鍥剧墖鏇挎崲瀛楃涓蹭腑瑙勫畾鐨勪綅缃腑  	
+                if (end < spannableString.length()) {//濡傛灉鏁翠釜瀛楃涓茶繕鏈獙璇佸畬锛屽垯缁х画銆傘� 						
                     dealExpression(context,spannableString,  patten, end);
                 }
                 break;
@@ -41,8 +39,8 @@ public class ExpressionUtil {
     }
     public static SpannableString getExpressionString(Context context,String str){
     	SpannableString spannableString = new SpannableString(str);
-    	String zhengze = "f0[0-9]{2}|f10[0-7]"; // 正则表达式，用来判断消息内是否有表情
-        Pattern sinaPatten = Pattern.compile(zhengze, Pattern.CASE_INSENSITIVE);//通过传入的正则表达式来生成一个pattern
+    	String zhengze = "f0[0-9]{2}|f10[0-7]"; // 姝ｅ垯琛ㄨ揪寮忥紝鐢ㄦ潵鍒ゆ柇娑堟伅鍐呮槸鍚︽湁琛ㄦ儏
+        Pattern sinaPatten = Pattern.compile(zhengze, Pattern.CASE_INSENSITIVE);//閫氳繃浼犲叆鐨勬鍒欒〃杈惧紡鏉ョ敓鎴愪竴涓猵attern
         try {
             dealExpression(context,spannableString, sinaPatten, 0);
         } catch (Exception e) {

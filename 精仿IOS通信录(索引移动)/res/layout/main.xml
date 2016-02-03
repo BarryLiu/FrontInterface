@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head" />
+
+    <com.ios.sinian.AddressBook.StickyListHeadersListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clipToPadding="false"
+        android:divider="#ffDFDFDF"
+        android:dividerHeight="1dip"
+        tools:listitem="@layout/test_list_item_layout"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Empty!"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+</LinearLayout>

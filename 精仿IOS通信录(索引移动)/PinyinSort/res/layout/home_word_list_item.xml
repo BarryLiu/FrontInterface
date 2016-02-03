@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray" >
+
+        <!-- 字母 -->
+
+        <TextView
+            android:id="@+id/text_first_char_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingTop="5dip"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 字母下的文字 -->
+
+        <TextView
+            android:id="@+id/text_website_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="20dip"
+            android:paddingTop="10dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
